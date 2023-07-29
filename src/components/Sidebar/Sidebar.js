@@ -204,6 +204,90 @@ export default function Sidebar() {
                   CONTRACT LIST
                 </Link>
               </li>
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/admin/egoldmining") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/admin/egoldmining"
+                >
+                  <i
+                    className={
+                      "fas fa-list mr-2 text-sm " +
+                      (window.location.href.indexOf("/admin/egoldmining") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>{" "}
+                  EGOLD MINING
+                </Link>
+              </li>
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/admin/egolduniversal") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/admin/egolduniversal"
+                >
+                  <i
+                    className={
+                      "fas fa-list mr-2 text-sm " +
+                      (window.location.href.indexOf("/admin/egolduniversal") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>{" "}
+                  EGOLD UNIVERSAL
+                </Link>
+              </li>
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/admin/egoldtrade") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/admin/egoldtrade"
+                >
+                  <i
+                    className={
+                      "fas fa-list mr-2 text-sm " +
+                      (window.location.href.indexOf("/admin/egoldtrade") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>{" "}
+                  EGOLD TRADE
+                </Link>
+              </li>
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/admin/egoldstaking") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/admin/egoldstaking"
+                >
+                  <i
+                    className={
+                      "fas fa-list mr-2 text-sm " +
+                      (window.location.href.indexOf("/admin/egoldstaking") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>{" "}
+                  EGOLD STAKING
+                </Link>
+              </li>
             </ul>
 
           </div>
