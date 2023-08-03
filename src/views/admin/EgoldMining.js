@@ -13,7 +13,7 @@ export default function EgoldMining() {
           <div className="flex flex-wrap">
           <div className="mt-5 rounded-t bg-white mb-0 px-6 py-6 mx-4 w-full">
               <div className="">
-                <h6 className="text-blueGray-700 text-xl font-bold">EGOLD MINING</h6>
+                <h6 className="text-blueGray-700 text-xl font-bold">EGOLD MINING SMART CONTRACT</h6>
                 <table className="w-full">
                   <tr>
                     <td className="border-2 p-2">REACT_APP_NFT_ADDRESS</td>
@@ -208,7 +208,163 @@ export default function EgoldMining() {
                 </table>
               </div>
           </div>
-
+          <div className="mt-5 rounded-t bg-white mb-0 px-6 py-6 mx-4 w-full">
+              <div className="">
+                <h6 className="text-blueGray-700 text-xl font-bold">EGOLD MINING API</h6>
+                <table className="w-full">
+                  <tr>
+                    <td className="border-2 p-2">Change Password</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://auth.egoldfarm.com/api/auth/changepw
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">LogInfo</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://auth.egoldfarm.com/logInfo/ + transid
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">Token Price</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-marketdata.herokuapp.com/v1/summary/getTokenPrices/" + props.data
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">Get BNB Price</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">Fetch 24 Hour Market Data</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-marketdata.herokuapp.com/v1/summary/getLatestTrades/20/
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">Summary</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-treasury.tagdev.info/v1/summary/dashboard/" + ls.get("acct");
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">MineStaturl</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-miner.tagdev.info/mininginfo/" + ls.get("acct");
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">TradeStaturl</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-marketdata.herokuapp.com/v1/summary/getTradeSummary/" +ls.get("acct");
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">Miner</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-treasury.tagdev.info/v1/summary/minersOf/" + ls.get("acct");
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">Miner</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-miner.tagdev.info/miner/" + ls.get("acct");
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">StakePending</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://auth.egoldfarm.com/taskidtothash/" + element
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">StakePending</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-miner.tagdev.info/staketransaction/" + json;
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">UnstakePending</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://auth.egoldfarm.com/taskidtothash/" + element
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">UnstakePending</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-miner.tagdev.info/unstaketransaction/" + element;
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-2 p-2">Fetch Total Hash Power</td>
+                    <td className="border-2 p-2">
+                      <a target="_blank" 
+                      className="text-xs px-4 py-2 rounded bg-lightBlue-500 text-white active:bg-lightBlue-600" 
+                      >
+                      https://egold-treasury.tagdev.info/v1/summary
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+          </div>
       </div>
       </div>
       </div>
